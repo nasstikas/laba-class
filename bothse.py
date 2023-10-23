@@ -63,7 +63,20 @@ def handle_text(m):
         markup.add(back) 
         bot.send_media_group(m.chat.id,[telebot.types.InputMediaPhoto("https://sun9-3.userapi.com/impg/JcrkRVBczdNMSnTb6CccnFpfpHdTJ-cNf7qV4Q/hwtfi7o1Cfw.jpg?size=736x736&quality=95&sign=049cb427400ca1f3cec1895e65e37b45&type=album"), telebot.types.InputMediaPhoto("https://sun9-69.userapi.com/impg/OdyIdHPCwjXHg_XOK56-eyiNAt2rM1CUO8_Kjw/jIQBBjven1Q.jpg?size=736x736&quality=95&sign=7135486f1cb68abd48ff960bbb3080db&type=album"),telebot.types.InputMediaPhoto("https://sun9-70.userapi.com/impg/XCD-ntzxsgQfXuF_-xz8wBzcNw_Zuq7w37i9dw/75JA18tPEDU.jpg?size=730x728&quality=95&sign=21562c880961423e0ba865f7d9e46dc9&type=album"),telebot.types.InputMediaPhoto("https://sun9-77.userapi.com/impg/iG4qVK2Fs4MbhYE5TXRHEiHt8w3GdLtvyeUSwA/VQgIwr7gTDw.jpg?size=748x465&quality=95&sign=b9f583a969c06a2086359fd7cb80d2a0&type=album"),telebot.types.InputMediaPhoto("https://sun9-44.userapi.com/impg/zH-8bzxPlAdfyeEA22YJSKS_Dp7IyBfVhNV2qg/FuAQVTdlhh8.jpg?size=720x475&quality=95&sign=7be4375f3b310a3d841707af2458ff4c&type=album"),telebot.types.InputMediaPhoto("https://sun9-72.userapi.com/impg/BAn0bdLBCFmJJnzogC76P_r59tDUZPifVnATYA/U5L3CVx-Ibw.jpg?size=474x480&quality=95&sign=f34df9476a8213ddf2f01b524470e9eb&type=album"),telebot.types.InputMediaPhoto("https://sun9-57.userapi.com/impg/p0zKtaKzBE1llLv84R06T2OSD-mCC_soXB42tA/Zx33jBhbsug.jpg?size=582x577&quality=95&sign=f301fff0b7a662f233da31d04b4a1e9f&type=album"),telebot.types.InputMediaPhoto("https://sun9-57.userapi.com/impg/M_jxajwr0i8eJrrbbJjIEwWth48ekRXtJSIaOQ/F5UFOaYW9Jk.jpg?size=440x649&quality=95&sign=94aff1614dc1d9d026d6169c8f73574b&type=album"),telebot.types.InputMediaPhoto("https://sun9-62.userapi.com/impg/RR5hVpquTbIpspOBE5T-DpzYtVenkxYKc2v0xw/TyI9Yl7KyMc.jpg?size=736x719&quality=95&sign=ee7448b0e2accb4a20cac84da54a457c&type=album"),telebot.types.InputMediaPhoto("https://sun9-65.userapi.com/impg/53DDs3tn7Z6mVSAEXopxepHiM27LWxz6yaWALQ/vpCBT1ipg9I.jpg?size=593x593&quality=95&sign=d9ab83714fbf9fa7df1fa194d5ed1f6d&type=album")])
         bot.send_message(m.chat.id, text="можешь посмотреть другие категории картинок", reply_markup=markup)    
-        
+    if m.text == "сэд муд":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        back = types.KeyboardButton("к категориям")
+        markup.add(back)
+        bot.send_media_group(m.chat.id,[telebot.types.InputMediaPhoto("https://sun9-58.userapi.com/impg/9e3dfUP3UGHnRGBUWFdgxMRofbOtQVylPRc5Qw/53zq93EfAZY.jpg?size=736x724&quality=95&sign=145038ee5a2153f444cbe5867257790a&type=album"),
+        telebot.types.InputMediaPhoto("https://sun9-23.userapi.com/impg/3Ig2RvRoQDcs95SVtimEll-XlSriuVNqO-a-kQ/flPCL7Jvpm4.jpg?size=442x338&quality=95&sign=799ae6902b4c310899b481583086a298&type=album")])
+        bot.send_message(m.chat.id, text="можешь посмотреть другие категории картинок", reply_markup=markup)
+    elif m.text == "хсе мемы":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        back = types.KeyboardButton("к категориям")
+        markup.add(back)
+        bot.send_media_group(m.chat.id,[telebot.types.InputMediaPhoto("https://sun9-78.userapi.com/impg/R5YB3O5uVa5uVzORco3nV2xAKNFAf94n760UiA/2XTvIRUFYI0.jpg?size=1080x411&quality=95&sign=963f37d63e139098d99a611eebea1e46&type=album"),telebot.types.InputMediaPhoto("https://sun9-57.userapi.com/impg/hFNTZ1R5UsUiAEW_UTowGfaqsm05SSJwhwu9xw/dEmKFfT7GKY.jpg?size=1242x774&quality=95&sign=408b23e065c9eda15685cfbe4465d6e1&type=album"), telebot.types.InputMediaPhoto("https://sun9-45.userapi.com/impg/mkzsYOfE5Frvd-f2WN8dIE_9g3IORIHnC1Q7Rw/2MKJ22Xxtj4.jpg?size=1280x864&quality=95&sign=f9f9c93903604ca675b9207507dacd79&type=album"),
+        telebot.types.InputMediaPhoto("https://sun9-71.userapi.com/impg/FJLqs2ggPAcqxcFMB8vGzldzYQFRbZEd1S7FWg/8qJnxLp2W70.jpg?size=598x648&quality=95&sign=e3d79c3bdc1b97d88a2ba9a603ee5dff&type=album")])
+        bot.send_message(m.chat.id, text="можешь посмотреть другие категории картинок", reply_markup=markup)    
     elif m.text == "бабуле":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("с днем рождения")
