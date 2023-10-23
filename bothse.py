@@ -59,18 +59,16 @@ def handle_text(m):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         back = types.KeyboardButton("к категориям")
         markup.add(back)
-        bot.send_media_group(m.chat.id,[telebot.types.InputMediaPhoto("https://sun9-58.userapi.com/impg/9e3dfUP3UGHnRGBUWFdgxMRofbOtQVylPRc5Qw/53zq93EfAZY.jpg?size=736x724&quality=95&sign=145038ee5a2153f444cbe5867257790a&type=album"),
-        telebot.types.InputMediaPhoto("https://sun9-23.userapi.com/impg/3Ig2RvRoQDcs95SVtimEll-XlSriuVNqO-a-kQ/flPCL7Jvpm4.jpg?size=442x338&quality=95&sign=799ae6902b4c310899b481583086a298&type=album")])
+        bot.send_media_group(m.chat.id,[telebot.types.InputMediaPhoto("https://sun9-48.userapi.com/impg/p9TlbzMRjl190hQqMBgWSWC2cDimbDSK_H5PWg/lbiFnyBiMpk.jpg?size=736x735&quality=95&sign=1e2cda3c9b9a16c05259f77ce05c4ef0&type=album"), telebot.types.InputMediaPhoto("https://sun9-63.userapi.com/impg/8zkTwbs4s1ZI3fMCCy_42tN_NDS7y0FEGjI29w/HEEdi11rahI.jpg?size=447x511&quality=95&sign=81a4301a10a63ad4f01ad4f7bc0d2d5b&type=album"), telebot.types.InputMediaPhoto("https://sun9-14.userapi.com/impg/XgEJ0qv0D_T19dhmChSqFziDjpAuCWinTVF-Cw/3N7p4KPhR_c.jpg?size=735x570&quality=95&sign=2741684a394dbfad063d2fffb42f564c&type=album"),telebot.types.InputMediaPhoto("https://sun9-57.userapi.com/impg/4FYBJDtGaeHLzNPk3ouwyy6IuklUEPg9jnmuZg/xty6K8igsT8.jpg?size=650x492&quality=95&sign=bf82522380d7e6e3dc1332164d0a567d&type=album"), telebot.types.InputMediaPhoto("https://sun9-33.userapi.com/impg/qWjfoV52QIrUHOBZGEZaEcFwSLQrfFAG7w0r0w/wAQuQTInHbU.jpg?size=735x461&quality=95&sign=3831d4bcc5a3c31a638e2ebec46e81bc&type=album"), telebot.types.InputMediaPhoto("https://sun9-52.userapi.com/impg/98c3Z3EqNoKhZA5-lPdEwZLvtfFqNrwgD9t7fg/56aOwJjTfBA.jpg?size=736x733&quality=95&sign=583aa5ed0c8fefbbaf7aef0555469437&type=album"),telebot.types.InputMediaPhoto("https://sun9-1.userapi.com/impg/tGz6EIUL8KWpIU4LKSWo7aVPHgsj3vvquilAMg/F1ZJzGC4bXg.jpg?size=1280x960&quality=95&sign=a5e83ce67e2f44d47715100b1019eae7&type=album"), telebot.types.InputMediaPhoto("https://sun9-58.userapi.com/impg/Nf-6jXSBQPfQJWUcUA2A-vmBdM6ZaBytHgKPhA/6urW80PGbsY.jpg?size=604x494&quality=95&sign=01b1e9422af71adab7ca796b97dc04c9&type=album"), telebot.types.InputMediaPhoto("https://sun9-80.userapi.com/impg/8RVDx8Fjs0oQf-ZJ_1OklyWMhbJiGRxD_4OQ6Q/XpbAkT1j5_c.jpg?size=735x599&quality=95&sign=e83193710d806f987c10e9a6db436422&type=album")])
         bot.send_message(m.chat.id, text="можешь посмотреть другие категории картинок", reply_markup=markup)
         
     elif m.text == "хсе мемы":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         back = types.KeyboardButton("к категориям")
         markup.add(back)
-        bot.send_media_group(m.chat.id,[telebot.types.InputMediaPhoto("https://sun9-78.userapi.com/impg/R5YB3O5uVa5uVzORco3nV2xAKNFAf94n760UiA/2XTvIRUFYI0.jpg?size=1080x411&quality=95&sign=963f37d63e139098d99a611eebea1e46&type=album"),telebot.types.InputMediaPhoto("https://sun9-57.userapi.com/impg/hFNTZ1R5UsUiAEW_UTowGfaqsm05SSJwhwu9xw/dEmKFfT7GKY.jpg?size=1242x774&quality=95&sign=408b23e065c9eda15685cfbe4465d6e1&type=album"), telebot.types.InputMediaPhoto("https://sun9-45.userapi.com/impg/mkzsYOfE5Frvd-f2WN8dIE_9g3IORIHnC1Q7Rw/2MKJ22Xxtj4.jpg?size=1280x864&quality=95&sign=f9f9c93903604ca675b9207507dacd79&type=album"),
-        telebot.types.InputMediaPhoto("https://sun9-71.userapi.com/impg/FJLqs2ggPAcqxcFMB8vGzldzYQFRbZEd1S7FWg/8qJnxLp2W70.jpg?size=598x648&quality=95&sign=e3d79c3bdc1b97d88a2ba9a603ee5dff&type=album")])
-        bot.send_message(m.chat.id, text="можешь посмотреть другие категории картинок", reply_markup=markup)  
-        
+        bot.send_media_group(m.chat.id, [telebot.types.InputMediaPhoto("https://sun9-18.userapi.com/impg/aHfbT_AAfBm-gE6ZsHDagFCJ7rAeLipqJaDm_Q/TvARCScaphY.jpg?size=1280x1280&quality=95&sign=12a4794a868f4309d337dd43703ff19a&type=album"), telebot.types.InputMediaPhoto("https://sun9-71.userapi.com/impg/y0a9MkPwnJ92S97k0Y4LNrOXg10kc_tll2nOJA/2ostrBtM7JQ.jpg?size=799x1280&quality=95&sign=444fdd5f2790d2affe3b0546f91e2b65&type=album"), telebot.types.InputMediaPhoto("https://sun9-61.userapi.com/impg/XK7X6CE2uOTfUaO58A3ipbeVhZh14FkIXT367w/LDAJOkyUETM.jpg?size=750x518&quality=95&sign=2a4c453dcc0fe7f2f330089a5a6334db&type=album"), telebot.types.InputMediaPhoto ("https://sun9-16.userapi.com/impg/jZKp0vWnbA3WIs8pjVdx3TnfGxKaE5vfUw4_dA/eBuAEUHv8II.jpg?size=640x702&quality=95&sign=44a4924a14c6638841d6817f9523d223&type=album"),telebot.types.InputMediaPhoto("https://sun9-46.userapi.com/impg/JXfHWuGqnxiICmU5s_k450t3WK6NacyqCFTfuQ/lXGG8xGOFeU.jpg?size=828x912&quality=95&sign=59ec2d7f1185211888fac80073c55edc&type=album"), telebot.types.InputMediaPhoto("https://sun9-22.userapi.com/impg/L7fyO1RIjtDf6-etY3NhW28ua8LDNr5a_drtUA/g2---lFRHP8.jpg?size=828x558&quality=95&sign=a3c392238d3ca25d16b47217a61f6c1a&type=album"), telebot.types.InputMediaPhoto("https://sun9-76.userapi.com/impg/biAmEneUZ_mwW_04jQReTTJWaYaNDGKCUqBaiw/NxuK0DV7vPI.jpg?size=828x376&quality=95&sign=96a1d856923f636e63c45dea3e3c8e44&type=album"), telebot.types.InputMediaPhoto("https://sun59-1.userapi.com/impg/e4kx-Mqb2XAKrfNuo9Y1bv4FXru2a9j4uqAdIw/Ur0S39n_bcg.jpg?size=827x873&quality=95&sign=691a7edeb4ddfc9b4fa8654e4ade3ceb&type=album"), telebot.types.InputMediaPhoto("https://sun9-33.userapi.com/impg/h1LeHF0ne8uzoG1SU88vVGoudmCFytwPHehapA/ASvPCH8EIjI.jpg?size=750x742&quality=95&sign=d1c7af4033811155f1c567dedfad1cab&type=album")])
+        bot.send_message(m.chat.id, text="можешь посмотреть другие категории картинок", reply_markup=markup)   
+
     elif m.text == "бабуле":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("с днем рождения")
@@ -111,6 +109,19 @@ def handle_text(m):
         btn7 = types.KeyboardButton("ругань")
         btn8 = types.KeyboardButton("споки")
         markup.add(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8) 
-        bot.send_message(m.chat.id, text="менюшка", reply_markup=markup)
+        bot.send_message(m.chat.id, text="меню", reply_markup=markup)
+        
+    else:
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True) 
+        btn1 = types.KeyboardButton("привет")
+        btn2 = types.KeyboardButton("кд чд")
+        btn3 = types.KeyboardButton("хсе мемы")
+        btn4 = types.KeyboardButton("бабуле")
+        btn5 = types.KeyboardButton("сэд муд")
+        btn6 = types.KeyboardButton("твоему крашу")
+        btn7 = types.KeyboardButton("ругань")
+        btn8 = types.KeyboardButton("споки")
+        markup.add(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8)        
+        bot.send_message(m.chat.id, text="я не знаю такой команды(((\nвыбери категорию картинок", reply_markup=markup)
 
 bot.polling(none_stop=True, interval=0)
