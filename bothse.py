@@ -18,7 +18,7 @@ def start(m, res=False):
     markup.add(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8)    
     bot.send_message(m.chat.id, 'приветик, {0.first_name}! здесь ты можешь найти картинки на любой случай жизни.\nвыбери, картинка какой категории тебе нужна'.format(m.from_user), reply_markup=markup)    
     
-@bot.message_handler(content_types=["text","stiker"])
+@bot.message_handler(content_types=["text","stiker","voice","photo"])
 def handle_text(m):
     if m.text == "кд чд":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -75,7 +75,7 @@ def handle_text(m):
         btn2 = types.KeyboardButton("с новым годом")
         btn3 = types.KeyboardButton("другие праздники")
         markup.add(btn1, btn2, btn3)
-        bot.send_message(m.chat.id, text="выбери подкатегорию солнце)", reply_markup=markup) 
+        bot.send_message(m.chat.id, text="выбери подкатегорию, солнце)", reply_markup=markup) 
         
     elif m.text == "с днем рождения":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
