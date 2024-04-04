@@ -1,52 +1,41 @@
-#ifndef WORKER_H
-#define WORKER_H
-#include "Person.h"
+#ifndef MASTER_H
+#define MASTER_H
+#include "Worker.h"
+#include "Manicure.h"
 #include <iostream>
 using namespace std;
 
-class Worker : public Person {
+class Master : public Worker, public Manicure {
 private:
-	double salary;
-	int tax_rate;
-	int experience;
+	int cost;
+	int efficiency;
 public:
-	Worker() {
-		salary = 0;
-		tax_rate = 0;
-		experience = 0;
+	Master() {
+		cost = 0;
+		efficiency = 0;
 	}
-	Worker(string& name, int phone_number, int age, string& email, double salary, int experience)
-		:Person(name, phone_number, age, email) {
-		this->salary = salary;
-		if (salary > 1000) {
-			tax_rate = 13;
+	Master(string& name, int phone_number, int age, string& email, double salary,  int experience, string& type, int price, int efficiency)
+		:Worker(name, phone_number, age, email, salary, experience), Manicure(type, price) {
+		this->efficiency = efficiency;
+		if (experience >= 5) {
+			cost = 1000 + price;
 		}
 		else {
-			tax_rate = 10;
+			cost = 500 + price;
 		}
-		this->experience = experience;
+	}
+	int getCost() {
+		return cost;
+	}
+	int getEfficiency() {
+		return efficiency;
+	}
+	void setCost(int cost) {
+		this->cost = cost;
+	}
+	void setEfficiency(int efficiency) {
+		this->efficiency = efficiency;
+	}
 
-	}
-	double getSalary() {
-		return salary;
-	}
-	void setSalary(double salary) {
-		this->salary = salary;
-	}
-	int getTaxRate() {
-		return tax_rate;
-	}
-	void setTaxRate(int tax_rate) {
-		this->tax_rate = tax_rate;
-	}
-	double getNETsalary() {
-		return salary * (100 - tax_rate) * 0.01;
-	}
-	int getExperience() {
-		return experience;
-	}
-	void setExperience(int experience) {
-		this->experience = experience;
-	}
 };
-#endif //WORKER_H
+#endif //MASTER_H
