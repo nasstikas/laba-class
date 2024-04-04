@@ -1,40 +1,52 @@
-#ifndef MASTER_H
-#define MASTER_H
+#ifndef WORKER_H
+#define WORKER_H
 #include "Person.h"
-#include "Manicure.h"
 #include <iostream>
+using namespace std;
 
-class Master: public Person, public Manicure{
+class Worker : public Person {
 private:
-	int cost;
+	double salary;
+	int tax_rate;
 	int experience;
 public:
-	Master() {
-		cost = 0;
+	Worker() {
+		salary = 0;
+		tax_rate = 0;
 		experience = 0;
 	}
-	Master(string& name, int& phone_number, int& age, string& email, string& type, int& ex_time, int& price, int& cost, int& experience)
-		:Person(name, phone_number, age, email), Manicure(type,ex_time,price)  {
+	Worker(string& name, int phone_number, int age, string& email, double salary, int experience)
+		:Person(name, phone_number, age, email) {
+		this->salary = salary;
+		if (salary > 1000) {
+			tax_rate = 13;
+		}
+		else {
+			tax_rate = 10;
+		}
 		this->experience = experience;
-		if (experience > 5) {
-			cost = 1000 + price;
-		}
-		else{
-			cost = 500 + price;
-		}
+
 	}
-	int getCost() {
-		return cost;
+	double getSalary() {
+		return salary;
+	}
+	void setSalary(double salary) {
+		this->salary = salary;
+	}
+	int getTaxRate() {
+		return tax_rate;
+	}
+	void setTaxRate(int tax_rate) {
+		this->tax_rate = tax_rate;
+	}
+	double getNETsalary() {
+		return salary * (100 - tax_rate) * 0.01;
 	}
 	int getExperience() {
 		return experience;
 	}
-	void setCost(int cost) {
-		this->cost = cost;
-	}
 	void setExperience(int experience) {
 		this->experience = experience;
 	}
-
 };
-#endif //MASTER_H
+#endif //WORKER_H
