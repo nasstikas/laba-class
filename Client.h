@@ -19,6 +19,7 @@ public:
 		this->day = day;
 		this->time = time;
 	}
+	
 	string getDay() {
 		return day;
 	}
@@ -31,6 +32,21 @@ public:
 	void setTime(int time) {
 		this->time = time;
 	}
+	friend ostream& operator << (ostream& os, Client& client) {
+
+		os << "Name:" << client.getName() << endl;
+		os << "Phone number: " << client.getPhone() << endl;
+		os << "Age: " << client.getAge() << endl;
+		os << "Email: " << client.getEmail() << endl;
+		os << "Manicure type: " << client.getType() << endl;
+		os << "Execution time: " << client.getEx_Time() << endl;
+		os << "Price: " << client.getPrice() << endl;
+		os << "Day of appointment: " << client.getDay() << endl;
+		os << "Time of appointment: " << client.getTime() << endl;
+
+		return os;
+	}
 };
 
 #endif //CLIENT_H
+
