@@ -64,6 +64,14 @@ public:
 		}
 		this->price = price;
 	}
+	friend ostream& operator << (ostream& os, Manicure& manicure) {
+
+		os << "Type of manicure: " << manicure.getType() << endl;
+		os << "Execution time: " << manicure.getEx_Time() << endl;
+		os << "Price: " << manicure.getPrice() << endl;
+
+		return os;
+	}
 };
 
 #endif //MANICURE_H
